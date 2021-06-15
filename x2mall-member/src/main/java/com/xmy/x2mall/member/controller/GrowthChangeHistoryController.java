@@ -1,28 +1,23 @@
 package com.xmy.x2mall.member.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
+import com.xmy.x2mall.common.utils.PageUtils;
+import com.xmy.x2mall.common.utils.R;
 import com.xmy.x2mall.member.entity.GrowthChangeHistoryEntity;
 import com.xmy.x2mall.member.service.GrowthChangeHistoryService;
-import com.xmy.common.utils.PageUtils;
-import com.xmy.common.utils.R;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 
 /**
  * 成长值变化历史记录
  *
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-25 14:57:45
+ * @date 2021-06-11 22:31:38
  */
 @RestController
 @RequestMapping("member/growthchangehistory")

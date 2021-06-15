@@ -12,17 +12,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.xmy.x2mall.coupon.entity.MemberPriceEntity;
 import com.xmy.x2mall.coupon.service.MemberPriceService;
-import com.xmy.common.utils.PageUtils;
-import com.xmy.common.utils.R;
+import com.xmy.x2mall.common.utils.PageUtils;
+import com.xmy.x2mall.common.utils.R;
 
 
 
 /**
  * 商品会员价格
  *
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-24 19:35:48
+ * @date 2021-06-13 16:59:40
  */
 @RestController
 @RequestMapping("coupon/memberprice")

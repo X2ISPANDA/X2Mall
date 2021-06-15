@@ -26,61 +26,61 @@
         prop="id"
         header-align="center"
         align="center"
-        label="">
+        label="采购单id">
       </el-table-column>
       <el-table-column
         prop="assigneeId"
         header-align="center"
         align="center"
-        label="">
+        label="采购人id">
       </el-table-column>
       <el-table-column
         prop="assigneeName"
         header-align="center"
         align="center"
-        label="">
+        label="采购人名">
       </el-table-column>
       <el-table-column
         prop="phone"
         header-align="center"
         align="center"
-        label="">
+        label="联系方式">
       </el-table-column>
       <el-table-column
         prop="priority"
         header-align="center"
         align="center"
-        label="">
+        label="优先级">
       </el-table-column>
       <el-table-column
         prop="status"
         header-align="center"
         align="center"
-        label="">
+        label="状态">
       </el-table-column>
       <el-table-column
         prop="wareId"
         header-align="center"
         align="center"
-        label="">
+        label="仓库id">
       </el-table-column>
       <el-table-column
         prop="amount"
         header-align="center"
         align="center"
-        label="">
+        label="总金额">
       </el-table-column>
       <el-table-column
         prop="createTime"
         header-align="center"
         align="center"
-        label="">
+        label="创建日期">
       </el-table-column>
       <el-table-column
         prop="updateTime"
         header-align="center"
         align="center"
-        label="">
+        label="更新日期">
       </el-table-column>
       <el-table-column
         fixed="right"

@@ -1,28 +1,23 @@
 package com.xmy.x2mall.product.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
+import com.xmy.x2mall.common.utils.PageUtils;
+import com.xmy.x2mall.common.utils.R;
 import com.xmy.x2mall.product.entity.AttrAttrgroupRelationEntity;
 import com.xmy.x2mall.product.service.AttrAttrgroupRelationService;
-import com.xmy.common.utils.PageUtils;
-import com.xmy.common.utils.R;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 
 /**
  * 属性&属性分组关联
  *
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-24 17:26:00
+ * @date 2021-06-10 14:08:22
  */
 @RestController
 @RequestMapping("product/attrattrgrouprelation")

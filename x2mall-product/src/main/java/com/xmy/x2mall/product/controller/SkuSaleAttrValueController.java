@@ -12,17 +12,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.xmy.x2mall.product.entity.SkuSaleAttrValueEntity;
 import com.xmy.x2mall.product.service.SkuSaleAttrValueService;
-import com.xmy.common.utils.PageUtils;
-import com.xmy.common.utils.R;
+import com.xmy.x2mall.common.utils.PageUtils;
+import com.xmy.x2mall.common.utils.R;
 
 
 
 /**
  * sku销售属性&值
  *
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-24 17:26:00
+ * @date 2021-06-10 14:08:22
  */
 @RestController
 @RequestMapping("product/skusaleattrvalue")

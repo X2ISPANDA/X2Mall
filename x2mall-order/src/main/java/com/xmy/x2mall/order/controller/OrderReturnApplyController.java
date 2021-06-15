@@ -12,17 +12,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.xmy.x2mall.order.entity.OrderReturnApplyEntity;
 import com.xmy.x2mall.order.service.OrderReturnApplyService;
-import com.xmy.common.utils.PageUtils;
-import com.xmy.common.utils.R;
+import com.xmy.x2mall.common.utils.PageUtils;
+import com.xmy.x2mall.common.utils.R;
 
 
 
 /**
  * 订单退货申请
  *
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-25 15:31:05
+ * @date 2021-06-13 16:26:25
  */
 @RestController
 @RequestMapping("order/orderreturnapply")

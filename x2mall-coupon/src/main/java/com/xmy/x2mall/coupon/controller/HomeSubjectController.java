@@ -12,17 +12,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.xmy.x2mall.coupon.entity.HomeSubjectEntity;
 import com.xmy.x2mall.coupon.service.HomeSubjectService;
-import com.xmy.common.utils.PageUtils;
-import com.xmy.common.utils.R;
+import com.xmy.x2mall.common.utils.PageUtils;
+import com.xmy.x2mall.common.utils.R;
 
 
 
 /**
  * 首页专题表【jd首页下面很多专题，每个专题链接新的页面，展示专题商品信息】
  *
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-24 19:35:48
+ * @date 2021-06-13 16:59:40
  */
 @RestController
 @RequestMapping("coupon/homesubject")

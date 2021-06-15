@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * 商品属性
  * 
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-24 17:26:00
+ * @date 2021-06-10 14:08:22
  */
 @Data
 @TableName("pms_attr")
@@ -33,6 +33,10 @@ public class AttrEntity implements Serializable {
 	 */
 	private Integer searchType;
 	/**
+	 * 值类型[0-为单个值，1-可以选择多个值]
+	 */
+	private Integer valueType;
+	/**
 	 * 属性图标
 	 */
 	private String icon;
@@ -41,7 +45,7 @@ public class AttrEntity implements Serializable {
 	 */
 	private String valueSelect;
 	/**
-	 * 属性类型[0-销售属性，1-基本属性，2-既是销售属性又是基本属性]
+	 * 属性类型[0-销售属性，1-基本属性
 	 */
 	private Integer attrType;
 	/**

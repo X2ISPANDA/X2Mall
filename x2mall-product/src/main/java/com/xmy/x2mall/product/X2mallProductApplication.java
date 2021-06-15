@@ -12,6 +12,7 @@ public class X2mallProductApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(X2mallProductApplication.class, args);
+
     }
 
 }

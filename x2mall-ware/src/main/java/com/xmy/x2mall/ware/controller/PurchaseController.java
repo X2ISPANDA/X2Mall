@@ -12,17 +12,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.xmy.x2mall.ware.entity.PurchaseEntity;
 import com.xmy.x2mall.ware.service.PurchaseService;
-import com.xmy.common.utils.PageUtils;
-import com.xmy.common.utils.R;
+import com.xmy.x2mall.common.utils.PageUtils;
+import com.xmy.x2mall.common.utils.R;
 
 
 
 /**
  * 采购信息
  *
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-25 15:35:16
+ * @date 2021-06-13 16:56:50
  */
 @RestController
 @RequestMapping("ware/purchase")

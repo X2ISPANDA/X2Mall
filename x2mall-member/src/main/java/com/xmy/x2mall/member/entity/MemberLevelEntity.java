@@ -11,9 +11,9 @@ import lombok.Data;
 /**
  * 会员等级
  * 
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-25 14:57:45
+ * @date 2021-06-11 22:31:38
  */
 @Data
 @TableName("ums_member_level")

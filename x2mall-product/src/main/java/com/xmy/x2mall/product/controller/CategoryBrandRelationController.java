@@ -1,43 +1,30 @@
 package com.xmy.x2mall.product.controller;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.xmy.x2mall.common.utils.PageUtils;
+import com.xmy.x2mall.common.utils.R;
+import com.xmy.x2mall.product.entity.CategoryBrandRelationEntity;
+import com.xmy.x2mall.product.service.CategoryBrandRelationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.xmy.x2mall.product.entity.CategoryBrandRelationEntity;
-import com.xmy.x2mall.product.service.CategoryBrandRelationService;
-import com.xmy.common.utils.PageUtils;
-import com.xmy.common.utils.R;
+import java.util.Arrays;
+import java.util.Map;
+
 
 
 
 /**
  * 品牌分类关联
  *
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-24 17:26:00
+ * @date 2021-06-10 14:08:22
  */
 @RestController
 @RequestMapping("product/categorybrandrelation")
 public class CategoryBrandRelationController {
     @Autowired
     private CategoryBrandRelationService categoryBrandRelationService;
-
-    /**
-     * 列表
-     */
-    @GetMapping(value = "/catelog/list")
-    //@RequiresPermissions("product:categorybrandrelation:list")
-    public R catelogList(@RequestParam Long brandId){
-        List<CategoryBrandRelationEntity> data = categoryBrandRelationService.list(new QueryWrapper<CategoryBrandRelationEntity>().eq("brand_id", brandId));
-
-        return R.ok().put("data", data);
-    }
 
     /**
      * 列表
@@ -68,8 +55,7 @@ public class CategoryBrandRelationController {
     @RequestMapping("/save")
     //@RequiresPermissions("product:categorybrandrelation:save")
     public R save(@RequestBody CategoryBrandRelationEntity categoryBrandRelation){
-
-		categoryBrandRelationService.saveDetail(categoryBrandRelation);
+		categoryBrandRelationService.save(categoryBrandRelation);
 
         return R.ok();
     }

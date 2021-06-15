@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * 库存工作单
  * 
- * @author X2
+ * @author xmy
  * @email xmy329@gmail.com
- * @date 2020-07-25 15:35:16
+ * @date 2021-06-13 16:56:50
  */
 @Data
 @TableName("wms_ware_order_task_detail")
@@ -40,13 +40,5 @@ public class WareOrderTaskDetailEntity implements Serializable {
 	 * 工作单id
 	 */
 	private Long taskId;
-	/**
-	 * 仓库id
-	 */
-	private Long wareId;
-	/**
-	 * 1-已锁定  2-已解锁  3-扣减
-	 */
-	private Integer lockStatus;
 
 }
