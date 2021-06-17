@@ -4,10 +4,12 @@ import com.xmy.x2mall.common.utils.PageUtils;
 import com.xmy.x2mall.common.utils.R;
 import com.xmy.x2mall.product.entity.CategoryEntity;
 import com.xmy.x2mall.product.service.CategoryService;
+import com.xmy.x2mall.product.vo.CategoryVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 
@@ -34,6 +36,17 @@ public class CategoryController {
         PageUtils page = categoryService.queryPage(params);
 
         return R.ok().put("page", page);
+    }
+
+    /**
+     * 列表
+     */
+    @RequestMapping("/list/tree")
+    //@RequiresPermissions("product:category:list")
+    public R listTree(){
+        List<CategoryVo> entities = categoryService.listWithTree();
+
+        return R.ok().put("data", entities);
     }
 
 
